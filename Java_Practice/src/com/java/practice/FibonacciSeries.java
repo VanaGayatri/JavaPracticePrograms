@@ -10,11 +10,11 @@ public class FibonacciSeries {
 		System.out.println("Enter the number of Fibonacci numbers to generate: ");
 		int n = sc.nextInt();
 		sc.close();
-		printFibonacciUpTo(n);
-		printFibonacciRange(n);
+		printFibonacciUpToGivenNterms(n);
+		printFibonacciUpToGivenRange(n);
 	}
 	
-	public static void printFibonacciUpTo(int n) {
+	public static void printFibonacciUpToGivenNterms(int n) {
 		if(n<=0) {
 			System.out.println("Please enter a positive interger.");
 			return;
@@ -32,7 +32,7 @@ public class FibonacciSeries {
 		}
 	}
 	
-	public static void printFibonacciRange(int n) {
+	public static void printFibonacciUpToGivenRange(int n) {
 		if(n<=0) {
 			System.out.println("Please enter a positive interger.");
 			return;
