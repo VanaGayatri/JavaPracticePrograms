@@ -8,7 +8,7 @@ public class PalindromeInteger {
 		System.out.println("Please Enter a integer to check if its Palindrome : ");
 		Scanner sc = new Scanner(System.in);
 		while (!sc.hasNextInt()) {
-			System.out.println("Please eneter an integer.");
+			System.out.println("Please enter an integer.");
 			sc.next();
 			System.out.println("Please Enter a integer to check if its Palindrome : ");
 		}
