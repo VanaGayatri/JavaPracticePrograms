@@ -9,23 +9,16 @@ public class FahrenheitToCelsius {
 		int S = sc.nextInt();
 		int E = sc.nextInt();
 		int W = sc.nextInt();
+		sc.close();
 
-		for(int i=S; i<=E; i+=W){
-			double celsius = fahrenheitToCelsius(i);
-			System.out.print(i+"\t");
-			if(celsius>=0)
-				System.out.println((int)Math.floor(celsius));
+		for (int i = S; i <= E; i += W) {
+			int celsius = (int) ((5.0 / 9) * (i - 32));
+			System.out.print(i + "\t");
+			if (celsius >= 0)
+				System.out.println(celsius);
 			else
-				System.out.println((int)Math.ceil(celsius));
+				System.out.println(celsius);
 
 		}
-		
-		sc.close();
-		
 	}
-
-	public static double fahrenheitToCelsius(int fahrenheit) {
-		return (5.0 / 9.0) * (fahrenheit - 32);
-	}
-	
 }
